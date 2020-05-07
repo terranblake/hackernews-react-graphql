@@ -724,34 +724,19 @@ export const sampleData: {
   ],
   users: [
     {
-      id: 'clintonwoo', // Aka. username
-      about: 'I am a software engineer who lives in New York.',
-      creationTime: 1506024614000,
+      id: 'terranblake', // Aka. username
+      about: 'I am a robot who lives in California.',
+      creationTime: 841190400,
       dateOfBirth: 723618000000,
-      email: 'clinton@hotmail.com',
-      firstName: 'Clinton',
+      email: 'business@terranblake.com',
+      firstName: 'Terran',
       hashedPassword: 'abc123',
       passwordSalt: '123',
       hides: [],
       karma: 3,
-      lastName: "D'Annolfo",
+      lastName: "Blake",
       likes: [],
       posts: [1222],
-    },
-    {
-      id: 'john', // Aka. username
-      about: 'Just a bloke',
-      creationTime: 1506024554000,
-      dateOfBirth: 554875200000,
-      email: 'john@doe.com',
-      firstName: 'John',
-      hashedPassword: '123',
-      passwordSalt: 'abc',
-      hides: [],
-      karma: 1,
-      lastName: 'Doe',
-      likes: [],
-      posts: [1223],
-    },
+    }
   ],
 };

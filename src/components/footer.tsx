@@ -15,14 +15,16 @@ export function Footer(): JSX.Element {
         </table>
         <br />
         <div style={{ textAlign: 'center' }}>
-          <span className="yclinks">
+          {/* <span className="yclinks">
             <a href="/newsguidelines">Guidelines</a>
             &nbsp;|{' '}
             <Link href="/newsfaq">
               <a>FAQ</a>
             </Link>
-            &nbsp;| <a href="mailto:hn@ycombinator.com">Support</a>
-            &nbsp;| <a href="https://github.com/HackerNews/API">API</a>
+            &nbsp;|{' '}
+            <Link href="/users?id=terranblake">
+              <a>Contact</a>
+            </Link>
             &nbsp;|{' '}
             <Link href="/security">
               <a>Security</a>
@@ -41,21 +43,8 @@ export function Footer(): JSX.Element {
             </Link>
             &nbsp;| <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
             &nbsp;| <a href="mailto:hn@ycombinator.com">Contact</a>
-          </span>
+          </span> */}
           <br />
-          <br />
-          <form method="get" action="//hn.algolia.com/" style={{ marginBottom: '1em' }}>
-            Search:
-            <input
-              type="text"
-              name="q"
-              size={17}
-              autoCorrect="off"
-              spellCheck={false}
-              autoCapitalize="off"
-              autoComplete="false"
-            />
-          </form>
         </div>
       </td>
     </tr>

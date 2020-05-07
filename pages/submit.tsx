@@ -21,6 +21,7 @@ function SubmitPage(props: ISubmitPageProps): JSX.Element {
   const [submitNewsItem] = useMutation(SUBMIT_NEWS_ITEM_MUTATION, {
     variables: { title, url, text },
     onCompleted(res) {
+      console.log({ res })
       if (res && res.data) {
         Router.push(`/item?id=${res.data.submitNewsItem.id}`);
       }

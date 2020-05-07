@@ -19,22 +19,6 @@ export function Header(props: IHeaderProps): JSX.Element {
         <table style={{ border: '0px', padding: '2px', borderSpacing: '0px', width: '100%' }}>
           <tbody>
             <tr>
-              <td style={{ width: '18px', padding: '0px', paddingRight: '4px' }}>
-                <Link href="/">
-                  <a>
-                    <img
-                      src="/static/y18.gif"
-                      style={{
-                        border: '1px',
-                        borderColor: 'white',
-                        borderStyle: 'solid',
-                        height: '18px',
-                        width: '18px',
-                      }}
-                    />
-                  </a>
-                </Link>
-              </td>
               <td style={{ lineHeight: '12px', height: '10px', padding: '0px' }}>
                 <HeaderNav currentUrl={currentUrl} isNavVisible={isNavVisible} title={title} />
               </td>

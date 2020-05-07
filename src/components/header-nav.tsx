@@ -9,7 +9,7 @@ interface IHeaderNavProps {
 }
 
 export function HeaderNav(props: IHeaderNavProps): JSX.Element {
-  const { userId, currentUrl, isNavVisible, title } = props;
+  const { userId, isNavVisible, title } = props;
 
   return isNavVisible ? (
     <span className="pagetop">
@@ -19,47 +19,22 @@ export function HeaderNav(props: IHeaderNavProps): JSX.Element {
         </Link>
       </b>
       &nbsp;
-      {userId && (
-        <Link href="/newswelcome">
-          <a>welcome</a>
-        </Link>
-      )}
       {userId && ' | '}
-      <Link href="/newest">
-        <a className={currentUrl === '/newest' ? 'topsel' : ''}>new</a>
-      </Link>
-      {userId && ' | '}
-      {userId && (
-        <Link href={`/threads?id=${userId}`}>
-          <a className={currentUrl === '/threads' ? 'topsel' : ''}>threads</a>
-        </Link>
-      )}
-      {' | '}
-      <Link href="/newcomments">
-        <a className={currentUrl === '/newcomments' ? 'topsel' : ''}>comments</a>
+      <Link href="/blog">
+        <a className='blog'>blog</a>
       </Link>
       {' | '}
-      <Link href="/show">
-        <a className={currentUrl === '/show' ? 'topsel' : ''}>show</a>
+      <Link href="/projects">
+        <a className='projects'>projects</a>
       </Link>
       {' | '}
-      <Link href="/ask">
-        <a className={currentUrl === '/ask' ? 'topsel' : ''}>ask</a>
+      <Link href="/about">
+        <a className='about'>about</a>
       </Link>
       {' | '}
-      <Link href="/jobs">
-        <a className={currentUrl === '/jobs' ? 'topsel' : ''}>jobs</a>
+      <Link href="/resume'>">
+        <a className='resume'>resume</a>
       </Link>
-      {' | '}
-      <Link href="/submit">
-        <a className={currentUrl === '/submit' ? 'topsel' : ''}>submit</a>
-      </Link>
-      {currentUrl === '/best' && ' | '}
-      {currentUrl === '/best' && (
-        <Link href="/best">
-          <a className="topsel">best</a>
-        </Link>
-      )}
     </span>
   ) : (
     <span className="pagetop">

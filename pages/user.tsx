@@ -66,15 +66,15 @@ function UserPage(props: IUserPageProps): JSX.Element {
       <MainLayout currentUrl={router.pathname} isFooterVisible={false}>
         <tr>
           <td>
-            <form className="profileform" method="post" action="/xuser">
-              <input type="hidden" name="id" value="clintonwoo" />
+            <form className="profileform" method="post" action="/user">
+              <input type="hidden" name="id" value="terranblake" />
               <input type="hidden" name="hmac" value="71104445c3c41b4167c38db67a656e610d5fbad9" />
               <table style={{ border: '0px' }}>
                 <tbody>
                   <tr className="athing">
                     <td style={{ verticalAlign: 'top' }}>user:</td>
                     <td>
-                      <Link href="/user?id=clintonwoo">
+                      <Link href="/user?id=terranblake">
                         <a className="hnuser" style={{ color: '#3c963c' }}>
                           {data?.user.id}
                         </a>

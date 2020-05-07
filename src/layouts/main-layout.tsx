@@ -23,13 +23,13 @@ export function MainLayout(props: IMainLayoutProps): JSX.Element {
     currentUrl,
     isNavVisible = true,
     isFooterVisible = true,
-    title = 'Hacker News',
+    title = 'Terran Blake',
   } = props;
 
   return (
     <div>
       <Head>
-        <title>Hacker News Clone</title>
+        <title>{title}</title>
         <meta name="referrer" content="origin" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" type="text/css" href="/static/news.css" />
@@ -45,7 +45,7 @@ export function MainLayout(props: IMainLayoutProps): JSX.Element {
           marginLeft: 'auto',
           marginRight: 'auto',
           padding: '0px',
-          width: '85%',
+          width: '50%',
         }}
       >
         <tbody>
